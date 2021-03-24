@@ -44,7 +44,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![✔] <img src="http://g.recordit.co/HawQ5bsP7y.gif" width=250>
+![✔] <img src="http://g.recordit.co/u4MOGQRqVs.gif" width=250>
 
 
 ## Reflection Questions
