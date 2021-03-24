@@ -44,7 +44,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![](your-link-here)
+![✔] https://recordit.co/oqu5aYNeBe
 
 
 ## Reflection Questions
@@ -71,7 +71,7 @@ The biggest challenge I encountered when creating this game was particularly the
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 
-If I had a few more hours to work on this project, I would further change the colors, fonts, and buttons. I would add slide and fade animations to some of the text. I could make the buttons rounder as well as add more border shadow. I could also put more thought into the images and move the layout of the buttons to further make the game resemble a Simon toy. Another part of the game I'd like to change is to add a high score. Instead of winning after 8 successive button presses in a pattern. I would have the game continue until the player makes three mistakes. I could make three separate high scores for each difficulty and display each one. Also, in addition to an alert being displayed when the game is over, I would add a sound que to signify that the game is over.
+If I had a few more hours to work on this project, I would further change the colors, fonts, and buttons. I would add slide and fade animations to some of the text. I could make the buttons rounder as well as add more border shadow. I could also put more thought into the images and move the layout of the buttons to further make the game resemble a Simon toy. Another part of the game I'd like to change is to add a high score. Instead of winning after 8 successive button presses in a pattern. I would have the game continue until the player makes three mistakes. I could make three separate high scores for each difficulty and display each one. Also, in addition to an alert being displayed when the game is over, I would add a sound que to signify that the game is over. One major bug is that the buttons can still be pressed when the clues are playing. This could cause issues with the time or lives counters. This would be fixed by disabling the onClick function of the buttons or not counting them as a guess when the clues are being played.
 
 
 
