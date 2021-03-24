@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Simon!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Simon!</h1>
+    
+    <p>
+      Welcome to the game! Repeat back the pattern by pressing buttons. If you make three mistakes, you lose. Repeat a pattern of 8 presses to win!
+    </p>
+    <!-- time indicator to player -->
+    <p id="time">
+      Time: 10
+    </p>
+    <p id="lives">
+      Lives: 3
+    </p>
+    <p id="difficulty">
+      Difficulty: Easy
+    </p>
+    
+    <!-- buttons to change difficulty of game -->
+    <button id="Easy" onclick="setDifficulty(this.id)">
+      Easy
+    </button>
+    <button id="Medium" onclick="setDifficulty(this.id)">
+      Medium
+    </button>
+    <button id="Hard" onclick="setDifficulty(this.id)">
+      Hard
+    </button>
+    
+    <br />
+    
+    <button id="startBtn" onclick="startGame()">
+      Start            
+    </button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop    
+    </button>
+    
+    <!-- buttons for playing the game, each button has an image that is hidden until the button is activated or pressed -->
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone(1)">
+        <img src="https://cdn.glitch.com/89cb20a9-4119-4106-ba88-87b2e97f3e0b%2Fjava.jpg?v=1616449574401" id="img1" class="buttonImg" />
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone(2)">
+        <img src="https://cdn.glitch.com/89cb20a9-4119-4106-ba88-87b2e97f3e0b%2Fjs.png?v=1616449578317" id="img2" class="buttonImg" />
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone(3)">
+        <img src="https://cdn.glitch.com/89cb20a9-4119-4106-ba88-87b2e97f3e0b%2Fhtml.png?v=1616449583450" id="img3" class="buttonImg" />
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone(4)">
+        <img src="https://cdn.glitch.com/89cb20a9-4119-4106-ba88-87b2e97f3e0b%2Fcss.png?v=1616449587437" id="img4" class="buttonImg" />
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone(5)">
+        <img src="https://cdn.glitch.com/89cb20a9-4119-4106-ba88-87b2e97f3e0b%2Fpython.webp?v=1616449603994" id="img5" class="buttonImg" />
+      </button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone(6)">
+        <img src="https://cdn.glitch.com/89cb20a9-4119-4106-ba88-87b2e97f3e0b%2Fcpp.png?v=1616449616980" id="img6" class="buttonImg" />
+      </button>
+    </div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
